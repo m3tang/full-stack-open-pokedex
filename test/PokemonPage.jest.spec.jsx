@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import axiosMock from "axios";
-import { act } from "react-dom/test-utils";
+import { act } from "react";
 import "@testing-library/jest-dom";
 import PokemonPage from "../src/PokemonPage";
 
@@ -121,6 +121,8 @@ describe("<PokemonPage />", () => {
       "href",
       "/pokemon/vaporeon"
     );
+
+    screen.debug();
   });
 
   it("should not render previous and next urls if none exist", async () => {
