@@ -121,8 +121,6 @@ describe("<PokemonPage />", () => {
       "href",
       "/pokemon/vaporeon"
     );
-
-    screen.debug();
   });
 
   it("should not render previous and next urls if none exist", async () => {
